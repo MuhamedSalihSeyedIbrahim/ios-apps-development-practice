@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autolayout_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rose" translatesAutoresizingMaskIntoConstraints="NO" id="WZa-mg-N08">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ciz-YI-Fn9">
+                                <rect key="frame" x="0.0" y="341" width="320" height="227"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rose Petals:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcW-hD-Ehb">
+                                        <rect key="frame" x="41" y="30" width="57" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="xnX-zJ-GO9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soft nad aromatic structures of the plant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Og9-Bm-4HJ">
+                                        <rect key="frame" x="54" y="74" width="226" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.53782460387323938" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Og9-Bm-4HJ" firstAttribute="leading" secondItem="ciz-YI-Fn9" secondAttribute="leading" constant="54" id="4R4-cF-d9s"/>
+                                    <constraint firstAttribute="trailing" secondItem="Og9-Bm-4HJ" secondAttribute="trailing" constant="40" id="4xR-Mu-f5H"/>
+                                    <constraint firstAttribute="trailing" secondItem="GcW-hD-Ehb" secondAttribute="trailing" constant="222" id="6zC-j4-uPe"/>
+                                    <constraint firstAttribute="bottom" secondItem="Og9-Bm-4HJ" secondAttribute="bottom" constant="135" id="FXo-GS-Q11"/>
+                                    <constraint firstItem="GcW-hD-Ehb" firstAttribute="top" secondItem="ciz-YI-Fn9" secondAttribute="top" constant="30" id="eHI-rv-38T"/>
+                                    <constraint firstItem="GcW-hD-Ehb" firstAttribute="leading" secondItem="ciz-YI-Fn9" secondAttribute="leading" constant="41" id="kTH-IN-h7b"/>
+                                    <constraint firstItem="Og9-Bm-4HJ" firstAttribute="top" secondItem="GcW-hD-Ehb" secondAttribute="bottom" constant="21" id="v8Z-za-euo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="ciz-YI-Fn9" secondAttribute="bottom" id="F4l-MO-MVo"/>
+                            <constraint firstItem="ciz-YI-Fn9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="Mrc-el-2gd"/>
+                            <constraint firstItem="WZa-mg-N08" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="S6s-JO-qjQ"/>
+                            <constraint firstItem="WZa-mg-N08" firstAttribute="centerX" secondItem="ciz-YI-Fn9" secondAttribute="centerX" id="WNZ-Gp-ZWL"/>
+                            <constraint firstItem="WZa-mg-N08" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bN0-sq-rnH"/>
+                            <constraint firstItem="ciz-YI-Fn9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="h6y-no-FUs"/>
+                            <constraint firstItem="ciz-YI-Fn9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ldu-1s-ees"/>
+                            <constraint firstItem="ciz-YI-Fn9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qQX-on-idh"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ciz-YI-Fn9" secondAttribute="bottom" id="usK-mD-oR6"/>
+                            <constraint firstItem="WZa-mg-N08" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yrz-6Q-PfA"/>
+                            <constraint firstItem="ciz-YI-Fn9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="zRM-Ob-Xr6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rose" width="1500" height="2592"/>
+    </resources>
+</document>
